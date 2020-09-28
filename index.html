@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Fuente de Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <!-- Iconos de Fontawesome -->
+   <script src="https://kit.fontawesome.com/eab48b2f65.js" crossorigin="anonymous"></script>
+   <!-- Estilos Personalizados -->
+   <link rel="stylesheet" href="style.css">
+   <title>Formularios | Expresiones Regulares</title>
+</head>
+
+<body>
+   <div class="container">
+      <div class="titulo">
+         <h1>Formulario de Usuario</h1>
+      </div>
+      <div class="perfil">
+         <img src="formulario.png" alt="Imagen formulario">
+      </div>
+      <form action="" class="formulario" id="formulario">
+         <!-- Grupo: Nombre -->
+         <div class="formulario__grupo" id="grupo__nombres">
+            <label for="nombres" class="formulario__label">Nombres</label>
+            <div class="formulario__grupo-input">
+               <input type="text" class="formulario__input" name="nombres" id="nombres"
+                  placeholder="Ingrese sus nombres">
+               <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El nombre tiene que ser de 3 a 50 letras no numeros.</p>
+         </div>
+
+         <!-- Grupo: Apellidos -->
+         <div class="formulario__grupo" id="grupo__apellidos">
+            <label for="apellidos" class="formulario__label">Apellidos</label>
+            <div class="formulario__grupo-input">
+               <input type="text" class="formulario__input" name="apellidos" id="apellidos"
+                  placeholder="Ingrese sus apellidos">
+               <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Los apellidos tiene que ser de 5 a 100 letras no numeros.</p>
+         </div>
+
+         <!-- Grupo: DNI -->
+         <div class="formulario__grupo" id="grupo__dni">
+            <label for="dni" class="formulario__label">DNI</label>
+            <div class="formulario__grupo-input">
+               <input type="text" class="formulario__input" name="dni" id="dni" placeholder="Ingresar su DNI">
+               <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El RUC debe contener 8 digitos.</p>
+         </div>
+
+         <!-- Grupo: RUC -->
+         <div class="formulario__grupo" id="grupo__ruc">
+            <label for="ruc" class="formulario__label">RUC</label>
+            <div class="formulario__grupo-input">
+               <input type="text" class="formulario__input" name="ruc" id="ruc" placeholder="Ingresar su RUC">
+               <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El RUC debe contener 11 digitos.</p>
+         </div>
+
+         <!-- Grupo: Celular -->
+         <div class="formulario__grupo" id="grupo__celular">
+            <label for="celular" class="formulario__label">Celular</label>
+            <div class="formulario__grupo-input">
+               <input type="text" class="formulario__input" name="celular" id="celular"
+                  placeholder="Ingrese su celular">
+               <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El celular tiene que ser de 9 digitos.</p>
+         </div>
+
+         <!-- Grupo: Teléfono -->
+         <div class="formulario__grupo" id="grupo__telefono">
+            <label for="telefono" class="formulario__label">Teléfono</label>
+            <div class="formulario__grupo-input">
+               <input type="text" class="formulario__input" name="telefono" id="telefono"
+                  placeholder="Ingrese su telefono">
+               <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+         </div>
+
+         <!-- Grupo: Correo Electronico -->
+         <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo" class="formulario__label">Correo Electrónico</label>
+            <div class="formulario__grupo-input">
+               <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+               <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion
+               bajo.</p>
+         </div>
+
+         <!-- Grupo: Direccion -->
+         <div class="formulario__grupo" id="grupo__direccion">
+            <label for="direccion" class="formulario__label">Dirección</label>
+            <div class="formulario__grupo-input">
+               <input type="text" class="formulario__input" name="direccion" id="direccion"
+                  placeholder="Ingresar su direccion">
+               <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">La direccion puede estar vacia.
+               bajo.</p>
+         </div>
+
+         <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente.
+            </p>
+         </div>
+
+         <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">Enviar</button>
+         </div>
+      </form>
+      <div class="footer">
+         <a href="https://github.com/denis-yeyson" class="link" target="_blank">
+            <img src="https://cdn.svgporn.com/logos/github-icon.svg" alt="logo GitHub" width="40px"
+               style="margin-right: 1rem;">
+            powered by @denisyeyson</a>
+      </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+
+</html>
